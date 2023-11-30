@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+        <div id="calculator">
+            <div  class="marquee-container">
+              <span class="marquee-letter">c</span>
+              <span class="marquee-letter" style="color: red;">a</span>
+              <span class="marquee-letter" style="color: gray">l</span>
+              <span class="marquee-letter" style="color: white">c</span>
+              <span class="marquee-letter" style="color: yellow;">u</span>
+              <span class="marquee-letter" style="color: cyan;">l</span>
+              <span class="marquee-letter" style="color: silver;">a</span>
+              <span class="marquee-letter" style="color: rgb(243, 7, 243);">t</span>
+              <span class="marquee-letter" style="color: saddlebrown;">o</span>
+              <span class="marquee-letter" style="color: orangered;">r</span>
+          </div>
+          <input type="text" disabled id="display" autocomplete="off">
+          <div class="buttons">
+          <div>
+            <button onclick="chuttikar(1)">1</button>
+            <button onclick="chuttikar(2)">2</button>
+            <button onclick="chuttikar(3)">3</button>
+            <button onclick="kaamkar('+')">+</button>
+          </div>
+          <div>
+            <button onclick="chuttikar(4)">4</button>
+            <button onclick="chuttikar(5)">5</button>
+            <button onclick="chuttikar(6)">6</button>
+            <button onclick="kaamkar('-')">-</button>
+          </div>
+          <div>
+            <button onclick="chuttikar(7)">7</button>
+            <button onclick="chuttikar(8)">8</button>
+            <button onclick="chuttikar(9)">9</button>
+            <button onclick="kaamkar('*')">x</button>
+          </div>
+          <div>
+            <button onclick="chuttikar(0)">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="jawabnikalkada()">=</button>
+            <button onclick="kaamkar('/')">/</button>
+          </div>
+          <div>
+            <button class="button" onclick="backspace()">Del</button>
+            <button class="button" onclick="calculateTrig('cos')">cos</button>
+            <button class="button" onclick="calculateTrig('sin')">sin</button>
+            <button class="button" onclick="calculateTrig('tan')">tan</button>
+          </div>
+         </div>
+          <div class="dot">
+            <!-- <button onclick="chuttikar('(')">(</button>
+            <button onclick="chuttikar(')')">)</button> -->
+            <button onclick="chuttikar('.')">.</button>
+            <!-- <button onclick="showHistory()">Log</button> -->
+
+          </div>
+          <div class="designer">
+            <h3 style="color: white;">Designed by Bilal Khan</h3>
+          </div>
+        </div>
+        </div>
+       
+
+        
+        <script src="script.js"></script>
+</body>
+</html>
